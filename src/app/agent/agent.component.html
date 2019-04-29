@@ -1,0 +1,38 @@
+<div id="fh5co-about" class="fh5co-agent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+        <h3>Our Agents</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <div class="row"  >
+    
+    <div class="col-sm-4 text-center animate-box fadeInUp animated" data-animate-effect="fadeIn" *ngFor = "let image of images">
+    
+        <div class="fh5co-staff">
+            
+        <img class="img-responsive"  [src]="image " alt="Free HTML5 Templates by freeHTML5.co">
+        
+        <span class="list-prop">Property List: 5</span>
+
+        <p>{{myData}}</p>
+        
+        <p class="fh5co-social-icons">
+            <a href="#"><i class="icon-twitter2"></i></a>
+            <a href="#"><i class="icon-facebook2"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-dribbble2"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+        </p>
+        <p><a class="btn btn-primary btn-outline" href="#">View Properties</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<app-layout></app-layout>

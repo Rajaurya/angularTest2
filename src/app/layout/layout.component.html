@@ -1,0 +1,51 @@
+<h1>Search Properties</h1>
+<form #f="ngForm" (ngSubmit)="onsubmit(f.value)">
+<div>
+  <label>Keyword:</label>
+  <input type="text" placeholder="@keyword" name="fkeyword" ngModel required>
+</div>
+<div>
+  <label>Property Status:</label>
+  <input type="text" placeholder="@status" name="fstatus" ngModel required>
+</div>
+<div>
+  <label>Type:</label>
+  <input type="text" placeholder="@type" name="ftype" ngModel required>
+</div>
+<div>
+  <label>Location:</label>
+  <input type="text" placeholder="@Location" name="fLocation" ngModel required>
+</div>
+<div>
+  <label>Price:</label>
+  <input type="text" placeholder="@Price" name="fPrice" ngModel required>
+</div>
+<div>
+  <label>Badrooms:</label>
+  <input type="text" placeholder="@Badrooms" name="fBadrooms" ngModel required>
+</div>
+<div>
+  <label>Bathrooms:</label>
+  <input type="text" placeholder="@Bathrooms" name="fBathrooms" ngModel required>
+</div>
+<div>
+  <label>Area:</label>
+  <input type="text" placeholder="@Area" name="fArea" ngModel required>
+</div>
+<div>
+  <label>Parking:</label>
+  <input type="text" placeholder="@Parking" name="fParking" [(ngModel)]="Parking">
+</div>
+<div>
+ <input type="submit" [disabled] = "f.invalid" value="Submit"/>
+</div>
+<span>{{fKeyword}}</span>
+<span>{{fstatus}}</span>
+<span>{{ftype}}</span>
+<span>{{fLocation}}</span>
+<span>{{fPrice}}</span>
+<span>{{fBadrooms}}</span>
+<span>{{fBathrooms}}</span>
+<span>{{fArea}}</span>
+<span>{{fParking}}</span>
+</form>
