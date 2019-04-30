@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout0.component.css']
 })
 export class Layout0Component implements OnInit {
-
+Email:""
   constructor() { }
 
   ngOnInit() {
   }
-
+  onsubmit(form:any): void{
+    console.log(form);
+    this.Email = form.femail;
+  }
 }

@@ -23,7 +23,7 @@ fParking="";
     console.log(form);
     this.fKeyword = form.fKeyword;
     this.fstatus =  form.fstatus;
-    this.fLocation = form.fLocation;
+    this.fLocation = form.fLocation; 
     this.fPrice = form.fPrice;
     this.fBadrooms = form.fBadrooms;
     this.fBathrooms = form.fBathrooms;

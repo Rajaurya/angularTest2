@@ -76,68 +76,35 @@
 
 <app-layout></app-layout>
 
-
-<div id="fh5co-blog-section" class="fh5co-section-gray">
-  <div class="container">
-    <div class="row">
+<div class="container">
+   
+  <div class="row"  >
       <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-        <h3>Recent From Blog</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+          <h3>Newest Properties</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+        </div>
+        
+    <div class="col-sm-3 text-center animate-box fadeInUp animated" data-animate-effect="fadeIn" *ngFor = "let data of Properties">
+    
+        <div class="fh5co-staff">
+           
+        <img class="img-responsive"  [src]="data.image"  alt="Free HTML5 Templates by freeHTML5.co">
+       <p> {{data.properties}}</p>
+       <p>{{data.price}}</p>
+                <span class="list-prop">Properties List</span>
+              
+        <p>{{myProperties}}</p>
+        
+
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row row-bottom-padded-md">
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="/assets/images/property-4.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">Properties for sale</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="./assets/images/property-2.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">Modern Home</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="./assets/images/property-3.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">15% Deal Discount For House</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="clearfix visible-md-block"></div>
-    </div>
+
   </div>
 </div>
 
 
 
+<!-- app layout k beech se data aaega new Property ka -->
 
 <div id="fh5co-features">
   <div class="container">
@@ -227,45 +194,8 @@
   </div>
 </div>
 
-<div id="fh5co-popular-properties" class="fh5co-section-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-        <h3>Popular Properties</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 animate-box">
-        <a href="#" class="fh5co-property" style="background-image: url(/assets/images/property-1.jpg);">
-          <span class="status">Sale</span>
-          <div class="prop-details">
-            <span class="price">$3,000</span>
-            <h3>Properties Near in Beach, USA California</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 animate-box">
-        <a href="#" class="fh5co-property" style="background-image: url(/assets/images/property-2.jpg);">
-          <span class="status">Rent</span>
-          <div class="prop-details">
-            <span class="price">$200/mos</span>
-            <h3>Modern House at NZ</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 animate-box">
-        <a href="#" class="fh5co-property" style="background-image: url(/assets/images/property-3.jpg);">
-          <span class="status">Sale</span>
-          <div class="prop-details">
-            <span class="price">$3,000</span>
-            <h3>Bonggalo House</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- koi or Property aaegi idher -->
+
 
 <div id="fh5co-testimonial" style="background-image:url(./assets/images/img_bg_2.jpg);">
   <div class="container">
@@ -275,168 +205,20 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <div class="box-testimony animate-box">
-          <blockquote>
-            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </blockquote>
-          <p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
-        </div>
-        
-      </div>
-      <div class="col-md-4">
-        <div class="box-testimony animate-box">
-          <blockquote>
-            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
-          </blockquote>
-          <p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
-        </div>
-        
-        
-      </div>
-      <div class="col-md-4">
-        <div class="box-testimony animate-box">
-          <blockquote>
-            <span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </blockquote>
-          <p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
-        </div>
-        
-      </div>
+
+<span>{{Happyclient}}</span>
     </div>
   </div>
 </div>
 
-<div id="fh5co-properties" class="fh5co-section-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-        <h3>Newest Properties</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(./assets/images/property-1.jpg);">
-            <span class="status">Sale</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>Properties Near in Beach</h3>
-            <span class="price">$3,000</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(./assets/images/property-2.jpg);">
-            <span class="status">Rent</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>Modern House at NZ</h3>
-            <span class="price">$200/mos</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(./assets/images/property-3.jpg);">
-            <span class="status">Sale</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>Bonggalo House</h3>
-            <span class="price">$3,000</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>						
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(./assets/images/property-4.jpg);">
-            <span class="status">Sale</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>Properties at Alaska</h3>
-            <span class="price">$3,000</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(images/property-5.jpg);">
-            <span class="status">Rent</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>Modern Properties</h3>
-            <span class="price">$200/mos</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 animate-box">
-        <div class="property">
-          <a href="#" class="fh5co-property" style="background-image: url(images/property-6.jpg);">
-            <span class="status">Sale</span>
-            <ul class="list-details">
-              <li>2000 ft sq<li>
-              <li>5 Bedroom:</li>
-              <li>4 Bathroom:</li>
-              <li>3 Garage:</li>
-            </ul>
-          </a>
-          <div class="property-details">
-            <h3>House at the Top of Mountain</h3>
-            <span class="price">$3,000</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.</p>
-            <span class="address"><i class="icon-map"></i>Thomas Street, St. Louis, MO 8990, USA</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Happy client end Here -->
 
+<!-- Newest Properties -->
+
+
+<!-- Newest Properties end here -->
+
+<!-- Our Agent -->
 
 <div id="fh5co-about" class="fh5co-agent">
   <div class="container">
@@ -446,122 +228,67 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+
+
+<div class="container">
+
+  <div class="row"  >
+    
+    <div class="col-sm-4 text-center animate-box fadeInUp animated" data-animate-effect="fadeIn" *ngFor = "let data of images">
+    
         <div class="fh5co-staff">
-          <img class="img-responsive" src="./assets/images/user-1.jpg" alt="Free HTML5 Templates by freeHTML5.co">
-          <h3>Jean Smith</h3>
-          <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
-          <p class="fh5co-social-icons">
+            
+        <img class="img-responsive"  [src]="data.image " alt="Free HTML5 Templates by freeHTML5.co">
+        <p>{{data.Name}}</p>
+        <span class="list-prop">Property List: 5</span>
+
+        <p>{{myagent}}</p>
+        
+        <p class="fh5co-social-icons">
             <a href="#"><i class="icon-twitter2"></i></a>
             <a href="#"><i class="icon-facebook2"></i></a>
             <a href="#"><i class="icon-instagram"></i></a>
             <a href="#"><i class="icon-dribbble2"></i></a>
             <a href="#"><i class="icon-youtube"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
-        <div class="fh5co-staff">
-          <img class="img-responsive" src="./assets/images/user-2.jpg" alt="Free HTML5 Templates by freeHTML5.co">
-          <h3>Hush Raven</h3>
-          <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
-          <p class="fh5co-social-icons">
-            <a href="#"><i class="icon-twitter2"></i></a>
-            <a href="#"><i class="icon-facebook2"></i></a>
-            <a href="#"><i class="icon-instagram"></i></a>
-            <a href="#"><i class="icon-dribbble2"></i></a>
-            <a href="#"><i class="icon-youtube"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
-        <div class="fh5co-staff">
-          <img class="img-responsive" src="./assets/images/user-3.jpg" alt="Free HTML5 Templates by freeHTML5.co">
-          <h3>Alex King</h3>
-          <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
-          <p class="fh5co-social-icons">
-            <a href="#"><i class="icon-twitter2"></i></a>
-            <a href="#"><i class="icon-facebook2"></i></a>
-            <a href="#"><i class="icon-instagram"></i></a>
-            <a href="#"><i class="icon-dribbble2"></i></a>
-            <a href="#"><i class="icon-youtube"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
-        <div class="fh5co-staff">
-          <img class="img-responsive" src="./assets/images/user-4.jpg" alt="Free HTML5 Templates by freeHTML5.co">
-          <h3>Hush Raven</h3>
-          <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
-          <p class="fh5co-social-icons">
-            <a href="#"><i class="icon-twitter2"></i></a>
-            <a href="#"><i class="icon-facebook2"></i></a>
-            <a href="#"><i class="icon-instagram"></i></a>
-            <a href="#"><i class="icon-dribbble2"></i></a>
-            <a href="#"><i class="icon-youtube"></i></a>
-          </p>
-        </div>
+        </p>
+        <p><a class="btn btn-primary btn-outline" href="#">View Properties</a></p>
       </div>
     </div>
+
+  </div>
+</div>
+  </div>
+  </div>
+
+<!-- our Agent end here -->
+
+<!-- blog strat here -->
+
+
+<div class="container">
+   
+  <div class="row"  >
+      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+          <h3>Our Blog</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+        </div>
+        
+    <div class="col-sm-3 text-center animate-box fadeInUp animated" data-animate-effect="fadeIn" *ngFor = "let data of Blog">
+    
+        <div class="fh5co-staff">
+           
+        <img class="img-responsive"  [src]="data.image " alt="Free HTML5 Templates by freeHTML5.co">
+        <p>{{data.Discount}}</p>
+                <span class="list-prop">Blog List</span>
+
+        <p>{{myBlog}}</p>
+        
+      
+      </div>
+    </div>
+
   </div>
 </div>
 
-<div id="fh5co-blog-section" class="fh5co-section-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-        <h3>Recent From Blog</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row row-bottom-padded-md">
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="./assets/images/property-4.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">Properties for sale</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="./assets/images/property-2.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">Modern Home</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="fh5co-blog animate-box">
-          <a href="#"><img class="img-responsive" src="./assets/images/property-3.jpg" alt=""></a>
-          <div class="blog-text">
-            <div class="prod-title">
-              <h3><a href="#">15% Deal Discount For House</a></h3>
-              <span class="posted_by">Sep. 15th</span>
-              <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a href="#">Learn More...</a></p>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="clearfix visible-md-block"></div>
-    </div>
-  </div>
-</div>
+
+<!-- blog end here -->
